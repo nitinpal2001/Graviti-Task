@@ -1,0 +1,40 @@
+.locationinput {
+  margin: 30px 0px;
+}
+.locationinput p {
+  width: fit-content;
+  position: relative;
+  left: 28px;
+  margin: 0 0 !important;
+  font-family: var(--work-sans-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.locationinput__input {
+  display: flex;
+  border: 1px solid #e9eef2;
+  border-radius: 4px;
+}
+
+.locationinput__input input {
+  margin: 6px 5px;
+  padding: 12px 0px 12px 40px;
+  box-sizing: border-box;
+}
+
+.locationinput__input img {
+  position: relative;
+  left: 37px;
+}
+
+.locationinput__input input::placeholder {
+  height: auto;
+  font-family: var(--rubik-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+
+  color: #1e2a32;
+}

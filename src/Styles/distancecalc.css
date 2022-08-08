@@ -1,0 +1,93 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap'); */
+
+.distancecalc {
+  min-height: 86.5vh;
+}
+
+.distancecalc h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+
+.distancecalc__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 85%;
+  margin-top: 4rem;
+  min-height: fit-content;
+  margin-left: auto;
+  margin-right: 6rem;
+}
+
+.distancecalc__container__left{
+  min-width: 15rem;
+}
+
+/* .distancecalc__container__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  min-height: 18rem;
+  padding: 0.5rem;
+  border-right: 1px solid #ccc;
+} */
+
+.distancecalc__container__left > div {
+  display: flex;
+  align-items: center;
+  /* padding: 0.5rem; */
+}
+
+.distancecalc__container__left button {
+  width: 141px;
+  position: relative;
+  top: 9px;
+  left: 3rem;
+  height: 62px;
+  background: #1b31a8;
+  border-radius: 32px;
+  border: none;
+  cursor: pointer;
+
+  /* Button Text CSS */
+  font-family: var(--work-sans-font);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.distancecalc__container__right {
+  width: 50%;
+  min-height: 63vh;
+  min-width: 19.56rem;
+  background-color: aqua;
+  margin-left: 8rem;
+}
+
+@media (max-width: 1218px) {
+  .distancecalc__container__right {
+    width: 70%;
+  min-height: 51vh;
+  min-width: 19.56rem;
+  margin-left: 20%;
+  margin-top: 20px;
+  background-color: aqua;
+}
+}
+@media (max-width: 367px) {
+  .distancecalc__container__right {
+  min-height: 51vh;
+  margin-left: 26%;
+}
+}
+@media (max-width: 340px) {
+  .distancecalc__container__right {
+  min-height: 42vh;
+  margin-left: 40%;
+}
+}
+
+

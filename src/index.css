@@ -1,10 +1,17 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  background-color:  var(--graviti-background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Color Variables */
+  --graviti-color:#fff;
+  --graviti-background:#F4F8FA;
+
+  /* Font Variables */
+  --work-sans-font: "Work Sans", sans-serif;
+  --rubik-font: "Rubik", sans-serif;
 }
 
 code {

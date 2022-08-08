@@ -1,0 +1,44 @@
+.distanceoutput {
+  display: flex;
+  flex-direction: column !important;
+  border: 0.1px solid rgb(238, 236, 236);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 2px !important;
+}
+
+.distanceoutput__top {
+  display: flex;
+  align-items: center;
+  background-color: var(--graviti-color);
+  padding: 0px 9px;
+}
+
+.distanceoutput__top > h4 {
+  font-family: var(--work-sans-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #1e2a32;
+  margin-right: 129px;
+}
+.distanceoutput__top > h2 {
+  font-family: var(--rubik-font);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  color: #0079ff;
+}
+
+.distanceoutput__bottom{
+    margin: 0 33px;
+    background-color: #F4F8FA;
+}
+
+.distanceoutput__bottom > p {
+  font-family: var(--work-sans-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: #1e2a32;
+}

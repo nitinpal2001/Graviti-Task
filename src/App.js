@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Navbar from './Components/Navbar';
+import DistanceCalc from './Components/DistanceCalc';
+import {useJsApiLoader} from '@react-google-maps/api';
+import LoadingSpinner from './Components/LoadingSpinner';
+
+import LoadingContext from './Components/LoadingContext';
+
 
 function App() {
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey: "AIzaSyD4xiMemZE2fDNxI0g-T5R4Lm4XJiD9Pb4",
+    libraries: ["places"]
+  });
+  if (!isLoaded) {
+    return <LoadingSpinner/>
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LoadingContext.Provider value={isLoaded}>
+      <Navbar/>
+      <DistanceCalc/>
+      </LoadingContext.Provider>
     </div>
   );
 }

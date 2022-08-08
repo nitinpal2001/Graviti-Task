@@ -1,0 +1,12 @@
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: var(--graviti-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navlogo{
+    margin: 5px 0px 5px 50px; 
+}
