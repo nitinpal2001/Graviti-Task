@@ -9,7 +9,7 @@ import LoadingContext from './Components/LoadingContext';
 
 
 function App() {
-  const ApiKey=process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+  const ApiKey="AIzaSyD4xiMemZE2fDNxI0g-T5R4Lm4XJiD9Pb4";
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: ApiKey,
     libraries: ["places"]
